@@ -1,0 +1,4 @@
+-#$('.magiclist').html("#{j render 'activities'}");
+-unless @activity.valid?
+  alert("#{@activity.errors.full_messages.to_sentence}");
+$.ajax("#{profile_path(@activity.profile)}");

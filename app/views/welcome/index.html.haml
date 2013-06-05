@@ -1,0 +1,15 @@
+%h1 Welcome to CrazyDate
+
+.login
+  This is the login
+  - if user_signed_in?
+    = 'super cool'
+    =link_to "profiles", profiles_path
+    =link_to "activities", activities_path
+  - else
+    = render 'devise/sessions/new'
+
+.magiclist
+  This is my magic list
+
+
